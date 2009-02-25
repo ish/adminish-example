@@ -1,0 +1,51 @@
+fields:
+  - name: ref
+    required: True
+    
+  - name: code
+    required: True
+
+  - name: photo
+    type: File()
+    required: True
+    widget:
+      options: 
+        show_image_thumbnail: True
+
+  - name: title
+    required: True
+
+  - name: location
+    required: True
+
+  - name: description
+    widget:
+      type: TextArea()
+      css_class: markitup
+
+  - name: show
+    type: Boolean()
+
+  - name: available
+    type: Boolean()
+
+  - name: categories
+    type: Sequence(String())
+    widget:
+      type: CheckboxMultiChoiceTreeCouchDB()
+      options: category/all
+
+  - name: pricing
+    type: Sequence(Structure())
+
+  - name: pricing.*.option
+    required: True
+
+  - name: pricing.*.price
+    type: Decimal()
+
+
+
+views:
+- type: all
+- type: all_count
