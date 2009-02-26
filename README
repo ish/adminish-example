@@ -23,6 +23,14 @@ adminish*! (when this ends up in pypi it will suck everything above in)
         convertish+
         dottedish+
 
+outstanding packages to go up to pypi
+
+- pagingish
+- couchish
+- jsonish
+- couchdb-session
+- adminish
+
 At some point, before April 2009 hopefully, all of these modules will be eggified and uploaded to PyPI .
 
 THIS IS NOT PRODUCTION READY CODE YET. BE WARNED.
