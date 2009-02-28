@@ -9,7 +9,7 @@ fields:
     - name: body
       required: True
       widget:
-        type: TextArea()
+        type: TextArea
         css_class: markitup
 
 views:

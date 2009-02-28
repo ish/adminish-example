@@ -1,6 +1,8 @@
 fields:
     - name: keys
-      type: Sequence(String())
+      type: Sequence
+      attr:
+        type: String
     - name: label
 
 views:
