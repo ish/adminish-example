@@ -6,7 +6,7 @@ fields:
     required: True
 
   - name: photo
-    type: File()
+    type: File
     required: True
     widget:
       options: 
@@ -20,29 +20,33 @@ fields:
 
   - name: description
     widget:
-      type: TextArea()
+      type: TextArea
       css_class: markitup
 
   - name: show
-    type: Boolean()
+    type: Boolean
 
   - name: available
-    type: Boolean()
+    type: Boolean
 
   - name: categories
-    type: Sequence(String())
+    type: Sequence
+    attr: 
+      type: String
     widget:
-      type: CheckboxMultiChoiceTreeCouchDB()
+      type: CheckboxMultiChoiceTreeCouchDB
       options: category/all
 
   - name: pricing
-    type: Sequence(Structure())
+    type: Sequence
+    attr:
+      type: Structure
 
   - name: pricing.*.option
     required: True
 
   - name: pricing.*.price
-    type: Decimal()
+    type: Decimal
 
 
 
