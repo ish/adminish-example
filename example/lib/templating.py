@@ -37,6 +37,4 @@ def make_renderer(app_conf):
             default_filters=['unicode', 'h']
             )
 
-    return None
-
 
