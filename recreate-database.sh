@@ -8,8 +8,8 @@ echo -n "Creating example .. "
 curl -X PUT http://localhost:5984/example
 echo
 ./setup-app.sh
-echo 'Populating Categories'
-./populate_categories.sh example -v
+#echo 'Populating Categories'
+#./populate_categories.sh example -v
 echo
 fi
 
